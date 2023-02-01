@@ -5,10 +5,9 @@
     <title>CounterButtonApp</title>
   </head>
   <body>
-    <div id="app">
-      <button type="button">0</button>
+    <div id="counter">
+      <button @click="increment" type="button">{{ count }}</button>
     </div>
-
     <script type="module" src="./script.js"></script>
   </body>
 </html>
