@@ -5,17 +5,17 @@
     <title>MeetupTitle</title>
   </head>
   <body>
-    <div id="app">
+    <div id="meetupTitles">
       <div>
-        <label><input type="radio" name="meetupId" value="1" /> 1</label>
-        <label><input type="radio" name="meetupId" value="2" /> 2</label>
-        <label><input type="radio" name="meetupId" value="3" /> 3</label>
-        <label><input type="radio" name="meetupId" value="4" /> 4</label>
-        <label><input type="radio" name="meetupId" value="5" /> 5</label>
+        <label><input type="radio" name="meetupId" value="1" v-model="IdValue"/> 1</label>
+        <label><input type="radio" name="meetupId" value="2" v-model="IdValue"/> 2</label>
+        <label><input type="radio" name="meetupId" value="3" v-model="IdValue"/> 3</label>
+        <label><input type="radio" name="meetupId" value="4" v-model="IdValue"/> 4</label>
+        <label><input type="radio" name="meetupId" value="5" v-model="IdValue"/> 5</label>
 
         <hr />
 
-        <h3>MEETUP_TITLE</h3>
+        <h3>{{ meetupTitle }}</h3>
       </div>
     </div>
 
