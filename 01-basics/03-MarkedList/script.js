@@ -48,9 +48,9 @@ const listComponent = {
         return email.toLowerCase().includes(this.searchValue.toLowerCase());
       };
 
-      return this.emails?.map(function (email) {
-        return { adress: email, marked: markFilter(email) };
-      });
+      return (this.emails) ? this.emails.map(function (email) {
+          return { adress: email, marked: markFilter(email) };
+        }) : this.emails;
     },
   },
 
@@ -59,6 +59,7 @@ const listComponent = {
       this.emails = comments.map((comment) => comment.email);
     });
   },
+
 };
 
 const listApp = createApp(listComponent);
